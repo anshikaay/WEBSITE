@@ -1,0 +1,119 @@
+*{
+margin:0;
+padding:0;
+font-family:'Trebuchet MS',sans-serif;
+}
+
+.banner{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bc.jpg);
+background-size:cover;
+background-position:center;
+
+}
+
+.bar{
+width:95%;
+margin:auto;
+padding:35px 0;
+align-items:center;
+justify-content:space-between;
+display: flex;
+margin-left: 50px;
+}
+
+.logo{
+width:120px;
+cursor:pointer;
+
+}
+
+.bar ul li{
+list-style:none;
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+
+.bar ul li a{
+text-decoration:none;
+color:#fff;
+text-transform:uppercase;
+}
+
+.bar ul li::after{
+content:'';
+height:3px;
+width:0;
+background:PINK;
+position:absolute;
+left: 0;
+bottom: -10px;
+transition:0.5s;
+}
+
+.bar ul li:hover::after{
+    width:100%;
+    border: none;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    
+}
+.content h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+.content p{
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    
+}
+button{
+    width:300px;
+    text-align: center;
+    padding: 25px 0;
+    margin: 20px 10;
+    border-radius: 35px;
+    font-weight: bold;
+    border:2px solid white;
+    background: transparent;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+    
+}
+span{
+    background:pink;
+    height:100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+
+
+
